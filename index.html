@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -119,9 +119,8 @@
           <ul>
             <li>
               Set up a global npm directory:
-              <code class="inline-code">
-                npm config set prefix $HOME/.npm-global
-              </code>
+              <!-- prettier-ignore -->
+              <code class="inline-code"> npm config set prefix $HOME/.npm-global </code>
             </li>
             <li>Add to Windows PATH if needed</li>
           </ul>
@@ -816,23 +815,23 @@ git push -u origin main</code></pre>
         </svg>`;
 
       function copyCode(button) {
-        const codeBlock = button.closest(".code-block");
-        const codeElement = codeBlock.querySelector("pre code");
+        const codeBlock = button.closest('.code-block');
+        const codeElement = codeBlock.querySelector('pre code');
         const codeText = codeElement.innerText;
 
         navigator.clipboard
           .writeText(codeText)
           .then(() => {
             // Swap to checkmark SVG
-            button.querySelector("svg").outerHTML = checkmarkSVG;
+            button.querySelector('svg').outerHTML = checkmarkSVG;
 
             setTimeout(() => {
               // Swap back to copy SVG
-              button.querySelector("svg").outerHTML = copyIconSVG;
+              button.querySelector('svg').outerHTML = copyIconSVG;
             }, 2000);
           })
           .catch((err) => {
-            console.error("Failed to copy: ", err);
+            console.error('Failed to copy: ', err);
           });
       }
     </script>
