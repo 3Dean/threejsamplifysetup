@@ -1,4 +1,3 @@
-@"
 # Logs
 logs
 *.log
@@ -8,22 +7,21 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Node dependencies
 node_modules/
-server.js
-.eslintrc.json
-.prettierrc
 
-# husky
-.husky
-
-dist
-dist-ssr
+# Output directories
+dist/
+dist-ssr/
 *.local
 
-# Editor directories and files
+# Husky
+.husky/
+
+# Editor directories and system files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
@@ -33,8 +31,6 @@ dist-ssr
 
 # Amplify
 .amplify/
-amplifyconfiguration*
-"@ | Out-File -FilePath .gitignore -Encoding utf8
-
-# amplify
 amplify_outputs*
+amplifyconfiguration*
+
