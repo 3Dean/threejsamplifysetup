@@ -1,0 +1,214 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Volkhov', serif;
+  font-weight: 400;
+  font-style: normal;
+  background: #d2d2cc;
+  color: #111;
+  line-height: 1.8;
+}
+
+header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Volkhov', serif;
+  font-weight: 700;
+  font-style: normal;
+  text-align: left;
+}
+
+/* Fonts*/
+.volkhov-regular {
+  font-family: 'Volkhov', serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.volkhov-bold {
+  font-family: 'Volkhov', serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.volkhov-regular-italic {
+  font-family: 'Volkhov', serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.volkhov-bold-italic {
+  font-family: 'Volkhov', serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+/* Swiss Container */
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+/* Headings */
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+p,
+li {
+  font-size: 1rem;
+  max-width: 60ch;
+  margin-bottom: 1rem;
+}
+
+/* List */
+ol {
+  list-style: decimal;
+  margin-left: 1.5rem;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.inline-code {
+  background: rgba(0, 0, 0, 0.05);
+  border: 0.5px solid #ccc;
+  color: rgb(123, 47, 47); /* your "danger" color */
+  white-space: pre-wrap;
+  border-radius: 0.3rem;
+  padding: 1px 4px;
+  font-size: 0.9rem;
+}
+.code-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #282c34;
+  color: #abb2bf;
+  font-family:
+    'Fira Code', 'Fira Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+}
+
+.code-label {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.5rem;
+  font-size: 0.75rem;
+  color: #dcdcdc;
+  z-index: 2; /* <-- 👈 This brings it above the toolbar */
+}
+
+.code-toolbar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.25rem;
+  background: #5b584e; /* dark background */
+  color: #e4e4e4;
+  /*mix-blend-mode: luminosity;*/
+}
+
+.toolbar-bg {
+  background: linear-gradient(
+    to bottom,
+    rgba(240, 240, 240, 0.9),
+    rgba(240, 240, 240, 0.7)
+  );
+  backdrop-filter: blur(4px);
+  border-radius: 0.25rem;
+  padding: 2px;
+}
+
+.copy-button {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 0.25rem;
+  opacity: 0.6;
+  transition:
+    opacity 0.2s,
+    transform 0.1s;
+}
+
+.copy-button:hover {
+  opacity: 1;
+  background: #eee;
+}
+
+.copy-button:active {
+  transform: scale(0.95);
+}
+
+.code-content {
+  padding: 2rem 1rem 1rem 1rem;
+  overflow-x: auto;
+}
+
+pre {
+  margin: 0;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+/* Footer */
+footer {
+  margin-top: 5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #6a6a6a;
+  font-size: 0.875rem;
+  color: #555;
+  background: #c3c3bf; /* dark background */
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 2rem 1rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
