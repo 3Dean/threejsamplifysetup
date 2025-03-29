@@ -136,6 +136,20 @@ a:hover {
     'Fira Code', 'Fira Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
 }
 
+.code-block pre {
+  white-space: pre;
+  overflow-x: auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: #282c34; /* or your dark background */
+}
+
+.code-block code {
+  display: block;
+  overflow-x: auto;
+  white-space: pre;
+}
+
 .code-label {
   position: absolute;
   left: 0.75rem;
@@ -196,14 +210,14 @@ a:hover {
   padding: 2rem 1rem 1rem 1rem;
   overflow-x: auto;
 }
-
+/*
 pre {
   margin: 0;
   font-size: 0.9rem;
   white-space: pre-wrap;
   line-height: 1.5;
 }
-
+*/
 /* Footer */
 footer {
   margin-top: 5rem;
@@ -223,4 +237,13 @@ footer {
   h1 {
     font-size: 2rem;
   }
+}
+
+pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+pre::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
 }
