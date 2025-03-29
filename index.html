@@ -58,6 +58,7 @@
               </ul>
             </ul>
           </li>
+          <br />
           <li>
             <h3>Install Git for Windows</h3>
           </li>
@@ -68,8 +69,13 @@
             </li>
             <li>Follow installation instructions</li>
             <ul>
-              <li>Choose "Use Git from Git Bash only" for PATH environment</li>
-              <li>Choose "Checkout as-is, commit as-is" for line endings</li>
+              <li>
+                Choose &#x22;Use Git from Git Bash only&#x22; for PATH
+                environment
+              </li>
+              <li>
+                Choose &#x22;Checkout as-is, commit as-is&#x22; for line endings
+              </li>
               <li>Enable Git Credential Manager</li>
             </ul>
           </ul>
@@ -87,6 +93,7 @@
             <li>Run the installer and follow the prompts</li>
             <li>Restart your terminal after installation</li>
           </ul>
+          <br />
           <li>
             <h3>Install Node.js LTS version</h3>
           </li>
@@ -113,6 +120,7 @@
               <code class="inline-code"> npm -v </code>
             </li>
           </ul>
+          <br />
           <li>
             <h3>Configure npm</h3>
           </li>
@@ -156,6 +164,7 @@ cd my-threejs-project</code></pre>
               </div>
             </div>
           </li>
+          <br />
           <li>
             <h3>Initialize npm project</h3>
             <div class="code-block">
@@ -184,6 +193,7 @@ cd my-threejs-project</code></pre>
               </div>
             </div>
           </li>
+          <br />
           <li>
             <h3>Set up Vite with Three.js template</h3>
             <div class="code-block">
@@ -212,6 +222,7 @@ cd my-threejs-project</code></pre>
               </div>
             </div>
           </li>
+          <br />
           <li>
             <h3>Install Three.js and dependencies</h3>
             <div class="code-block">
@@ -241,6 +252,7 @@ npm install --save-dev vite-plugin-glsl</code></pre>
               </div>
             </div>
           </li>
+          <br />
           <li>
             <h3>Create basic project structure</h3>
             <div class="code-block">
@@ -283,6 +295,7 @@ npm install --save-dev vite-plugin-glsl</code></pre>
               </div>
             </div>
           </li>
+          <br />
           <li>
             <h3>Set up Vite configuration</h3>
             Create
@@ -324,6 +337,7 @@ export default defineConfig({
               </div>
             </div>
           </li>
+          <br />
           <li>
             <h3>Create a basic Three.js scene</h3>
             Update
@@ -400,6 +414,7 @@ animate();</code></pre>
               </div>
             </div>
           </li>
+          <br />
           <li>
             <h3>Update HTML template</h3>
             Update
@@ -443,6 +458,7 @@ animate();</code></pre>
               </div>
             </div>
           </li>
+          <br />
           <li>
             <h3>Add basic styling</h3>
             Update
@@ -487,6 +503,7 @@ canvas {
               </div>
             </div>
           </li>
+          <br />
           <li>
             <h3>Test your setup</h3>
             <div class="code-block">
@@ -515,6 +532,7 @@ canvas {
               </div>
             </div>
           </li>
+          <br />
           <li>
             <h3>Build your project</h3>
             <div class="code-block">
@@ -574,6 +592,7 @@ canvas {
               </div>
             </div>
           </li>
+          <br />
           <li>
             <h3>Create GitHub repository</h3>
           </li>
@@ -583,7 +602,7 @@ canvas {
               <a href="https://github.com/"> GitHub </a>
               and sign in
             </li>
-            <li>Click "New repository"</li>
+            <li>Click &#x22;New repository&#x22;</li>
             <li>Fill in the details:</li>
             <ul>
               <li>
@@ -596,9 +615,10 @@ canvas {
               </li>
               <li>Set to public or private</li>
               <li>Do not initialize with README, .gitignore, or license</li>
-              <li>Click "Create repository"</li>
+              <li>Click &#x22;Create repository&#x22;</li>
             </ul>
           </ul>
+          <br />
           <li>
             <h3>Link local repository to GitHub</h3>
             <div class="code-block">
@@ -631,6 +651,54 @@ git push -u origin main</code></pre>
               </div>
             </div>
           </li>
+          <br />
+          <li>
+            <h3>
+              Password Issues? Use a Personal Access Token &#x28;Easy +
+              Fast&#x29;
+            </h3>
+          </li>
+          Instead of your GitHub password, you use a token.
+          <ul>
+            <li>Create a Personal Access Token</li>
+            <ul>
+              <ol>
+                <li>
+                  Go to
+                  <a href="https://github.com/settings/tokens?type=beta">
+                    GitHub Tokens Settings
+                  </a>
+                </li>
+                <li>
+                  <!-- prettier-ignore -->
+                  Click <b>Generate new token</b> &#x28;Fine-grained or Classic
+                  &#8211;either is fine&#x29;
+                </li>
+                <li>
+                  Give it a name like
+                  <code class="inline-code">Amplify Push Token</code>
+                </li>
+                <li>
+                  Scope: check <b>repo</b> permissions &#x28;for
+                  read/write&#x29;
+                </li>
+                <li>
+                  Set an expiration date &#x28;1 year, or &#x22;No
+                  expiration&#x22; if you're forgetful 😅&#x29;
+                </li>
+                <li>Click <b>Generate token</b> at the bottom of the page</li>
+                <li>
+                  Copy the generated token and store it in a safe place
+                  &#x28;you won't be able to see it again&#x29;
+                </li>
+                <li>
+                  Use this token as your password when pushing to GitHub from
+                  the command line or any Git client.
+                  <br />
+                </li>
+              </ol>
+            </ul>
+          </ul>
         </ol>
         <h2>5. Set Up AWS Amplify Gen 2</h2>
         <ol>
@@ -648,6 +716,7 @@ git push -u origin main</code></pre>
               <code class="inline-code"> aws --version </code>
             </li>
           </ul>
+          <br />
           <li>
             <h3>Configure AWS CLI</h3>
             <div class="code-block">
@@ -679,9 +748,16 @@ git push -u origin main</code></pre>
           <ul>
             <li>Enter your AWS Access Key ID</li>
             <li>Enter your AWS Secret Access Key</li>
-            <li>Set default region (e.g., us-east-1)</li>
-            <li>Set default output format (e.g., json)</li>
+            <li>Set default region &#x28;e.g., us-east-1&#x29;</li>
+            <li>Set default output format &#x28;e.g., json&#x29;</li>
           </ul>
+          <!-- prettier-ignore -->
+          You can find your access keys in the AWS Management Console under IAM &#x2192; Users &#x2192; Security credentials. To set up user access keys, you may need to create a new user with programmatic access if you don't already have one.
+          <a href="https://docs.amplify.aws/javascript/start/account-setup/">
+            <b>View documents</b></a
+          >
+          <br />
+          <br />
           <li>
             <h3>Initialize AWS Amplify Gen 2</h3>
             Install AWS Amplify
@@ -711,6 +787,7 @@ git push -u origin main</code></pre>
               </div>
             </div>
           </li>
+          <br />
           <li>
             <h3>Start a local sandbox environment</h3>
             <div class="code-block">
@@ -756,10 +833,10 @@ git push -u origin main</code></pre>
             <li>Select your Repository and hit Next</li>
             <li>I leave the App Settings page as-is and click Next</li>
             <li>
-              Usually nothing to change on the Review page either. Click Save
-              and Deploy
+              Usually nothing to change on the Review page either. Click
+              <b>Save and Deploy</b>
             </li>
-            <li>Click on the App you just created</li>
+            <li>To view, click on the App link</li>
           </ul>
         </ol>
         <h2>7. Back to Visual Studio Code</h2>
